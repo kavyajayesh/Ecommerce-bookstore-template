@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science - Bookstore</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Bookstore</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="category.html">Fiction</a></li>
+                                <li><a class="dropdown-item" href="category.html">Non-Fiction</a></li>
+                                <li><a class="dropdown-item" href="category.html">Children's Books</a></li>
+                                <li><a class="dropdown-item" href="category.html">Educational</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#footer">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                    <a href="cart.html" class="nav-link cart-icon">
+                        <i class="bi bi-cart-fill"></i>
+                    </a>
+                    <a href="checkout.html" class="nav-link checkout-icon">
+                        <i class="bi bi-bag-fill"></i>
+                    </a>
+                    <a href="login.html" class="nav-link">Login</a>
+                    <a href="register.html" class="nav-link">Register</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Category Page Content -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Sidebar with Filters -->
+            <aside class="col-md-3">
+                <h4>Filter by</h4>
+                <div class="mb-3">
+                    <h5>Price Range</h5>
+                    <input type="range" class="form-range" id="priceRange" min="0" max="1000" step="10">
+                </div>
+                <div class="mb-3">
+                    <h5>Author</h5>
+                    <select class="form-select">
+                        <option selected>Choose...</option>
+                        <option value="1">Author 1</option>
+                        <option value="2">Author 2</option>
+                        <option value="3">Author 3</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <h5>Rating</h5>
+                    <select class="form-select">
+                        <option selected>Choose...</option>
+                        <option value="1">1 Star & Up</option>
+                        <option value="2">2 Stars & Up</option>
+                        <option value="3">3 Stars & Up</option>
+                        <option value="4">4 Stars & Up</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+            </aside>
+
+            <!-- Products Listing -->
+            <main class="col-md-9">
+                <h2>Science Books</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/300x400" class="card-img-top" alt="Book 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Book Title 1</h5>
+                                <p class="card-text">Description of Book 1.</p>
+                                <a href="#" class="btn btn-buy-now">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/300x400" class="card-img-top" alt="Book 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Book Title 2</h5>
+                                <p class="card-text">Description of Book 2.</p>
+                                <a href="#" class="btn btn-buy-now">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/300x400" class="card-img-top" alt="Book 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Book Title 3</h5>
+                                <p class="card-text">Description of Book 3.</p>
+                                <a href="#" class="btn btn-buy-now">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-dark-navy text-light py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Subscribe to Newsletter -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="footer-heading">Subscribe to our Newsletter</h5>
+                    <form>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                        </div>
+                        <button type="submit" class="btn btn-light">Subscribe</button>
+                    </form>
+                </div>
+                <!-- Connect with Us -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="footer-heading">Connect with Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Facebook</a></li>
+                        <li><a href="#" class="text-light">Twitter</a></li>
+                        <li><a href="#" class="text-light">Instagram</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Us -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="footer-heading">Contact Us</h5>
+                    <p class="text-light">Email: info@bookstore.com</p>
+                    <p class="text-light">Phone: +123 456 7890</p>
+                </div>
+                <!-- Useful Links -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="footer-heading">Useful Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Privacy Policy</a></li>
+                        <li><a href="#" class="text-light">Terms of Service</a></li>
+                        <li><a href="#" class="text-light">FAQs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+category.txt
+Displaying category.txt.
